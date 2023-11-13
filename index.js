@@ -1,2 +1,4 @@
-// Why's and how's of code
-console.log("Hello World!");
+let name;
+console.log(name);
+
+// by default variables defined in JS have value = undefined
