@@ -55,9 +55,21 @@ const person = {
  let selectedColors = ['red', 'blue', 'violet'];
  selectedColors[3] = 'green';
  selectedColors[4] = true; // Array is not narrowed in JS to one type of data...
- console.log(selectedColors);
- console.log(selectedColors[4]);
- console.log(typeof(selectedColors));
- console.log(selectedColors.length);
+//  console.log(selectedColors);
+//  console.log(selectedColors[4]);
+//  console.log(typeof(selectedColors));
+//  console.log(selectedColors.length);
 
 // Function
+
+function greet(name) { // parameter
+    console.log(`Hello ${name}!`); // body function
+}
+greet('Lena'); // argument
+greet('Bartek');
+
+function bye(name, lastName) {
+    console.log(`Good night, sweet ${name} from ${lastName} House!`)
+}
+
+bye('Lena', 'Lanister');
