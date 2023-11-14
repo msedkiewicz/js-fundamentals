@@ -42,7 +42,7 @@ const person = {
     age: 25
 }; // Object Literal
 
-// Accessing object properties
+    // Accessing object properties
     person.name = 'John'; // Dot notation
     person['age'] = 34; //Bracket notation
 
@@ -51,4 +51,13 @@ const person = {
     //console.log(person);
 
 // Array
+ let rblGoals = []; // initialize empty Array Literal
+ let selectedColors = ['red', 'blue', 'violet'];
+ selectedColors[3] = 'green';
+ selectedColors[4] = true; // Array is not narrowed in JS to one type of data...
+ console.log(selectedColors);
+ console.log(selectedColors[4]);
+ console.log(typeof(selectedColors));
+ console.log(selectedColors.length);
+
 // Function
