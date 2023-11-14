@@ -27,4 +27,28 @@ let isApproved = true; // Boolean Literal
 let firstName; // undefined
 let lastName = null; // for clearing the value of variable
 
+// Static (statically-typed) - type of variable is set and cannot be changed (i.e. TypeScript)
+// Dynamic (dynamically-typed) - type of variable can be changed during run time
+
+console.log(typeof(age));
+age = true;
+console.log(typeof(age));
+age = 30.1; // JS has just number type - no floats, integers etc
+console.log(typeof(age));
+
 // Reference Types
+const person = {
+    name: 'Lena',
+    age: 25
+}; // Object Literal
+
+// Accessing object properties
+    person.name = 'John'; // Dot notation
+    person['age'] = 34; //Bracket notation
+
+    let selection = 'age';
+    person[selection] = 56;
+// Array
+// Function
+
+console.log(person);
