@@ -1,5 +1,5 @@
 let name = 'Lena';
-console.log(name);
+// console.log(name);
 
 // Cannot be a reserved keyword
 // Should be meaningful and descriptive
@@ -30,11 +30,11 @@ let lastName = null; // for clearing the value of variable
 // Static (statically-typed) - type of variable is set and cannot be changed (i.e. TypeScript)
 // Dynamic (dynamically-typed) - type of variable can be changed during run time
 
-console.log(typeof(age));
+// console.log(typeof(age));
 age = true;
-console.log(typeof(age));
+// console.log(typeof(age));
 age = 30.1; // JS has just number type - no floats, integers etc
-console.log(typeof(age));
+// console.log(typeof(age));
 
 // Reference Types
 const person = {
@@ -48,7 +48,7 @@ const person = {
 
     let selection = 'age';
     person[selection] = 56;
+    //console.log(person);
+
 // Array
 // Function
-
-console.log(person);
