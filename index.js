@@ -62,6 +62,7 @@ const person = {
 
 // Function
 
+// Performing a task
 function greet(name) { // parameter
     console.log(`Hello ${name}!`); // body function
 }
@@ -73,3 +74,14 @@ function bye(name, lastName) {
 }
 
 bye('Lena', 'Lanister');
+
+// Calculating a value
+
+function square(number) {
+    return number * number;
+}
+
+console.log(square(4)); // cosnole.log is also a function call :P
+
+let squareRoot = square(27);
+console.log(squareRoot);
