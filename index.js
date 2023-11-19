@@ -152,19 +152,26 @@ let type = points > 100 ? 'gold' : 'silver';
 // console.log(false || false) // false
 
 // // NOT (!)
-// console.log(!true); // false
+// // console.log(!true); // false
 
-console.log(false || true); // true
-console.log(false || 'Lena'); // Lena
-console.log(false || 1 ); // 1
+// console.log(false || true); // true
+// console.log(false || 'Lena'); // Lena
+// console.log(false || 1 ); // 1
 
-// If operand is not a boolean true or false, it interprets result as truthy or falsy
-// Falsy values => undefined, null, 0, false, '', NaN
-// Anything not Falsy => Truthy
+// // If operand is not a boolean true or false, it interprets result as truthy or falsy
+// // Falsy values => undefined, null, 0, false, '', NaN
+// // Anything not Falsy => Truthy
 
-console.log(false || 1 || 2) // 1 - as soon as truthy value is found it's returned - short-circuiting
+// console.log(false || 1 || 2) // 1 - as soon as truthy value is found it's returned - short-circuiting
 
-let userColor = 'red'; // if userColor = undefined; currentColor = blue
-let defaultColor = 'blue';
-let currentColor = userColor || defaultColor;
-console.log(currentColor); // red
+// let userColor = 'red'; // if userColor = undefined; currentColor = blue
+// let defaultColor = 'blue';
+// let currentColor = userColor || defaultColor;
+// console.log(currentColor); // red
+
+// Precedence of operators
+
+console.log(2 + 3 * 4); // 14
+
+// use parentheses to determine order if needed
+console.log((2 + 3) * 4); // 20
