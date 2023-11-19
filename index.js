@@ -114,3 +114,15 @@ let a = 3; // simple assignment operator
 a++; // increment operator, equivalent to a = a + 1;
 a += 5; // addition assignment operator. a = a + 5;
 x *= 3 // x = x * 3; multiplication assignment operator
+
+// Comparison operators
+
+// Relational operators - returns Boolean
+console.log(a > 0); // returns true
+console.log(a >= 9); // for a = 9 returns true
+console.log(a < 0); // false
+console.log(a <= 9); // true
+
+// Equality operators
+console.log(a === 9); // true
+console.log(a !== 9); // false
