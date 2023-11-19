@@ -128,9 +128,14 @@ x *= 3 // x = x * 3; multiplication assignment operator
 // console.log(a !== 9); // false
 
 // Strict equality operator (type + value)
-console.log(a === 9); // true
-console.log(a === '9'); // false
-// Lose equality operator (value)
-console.log(a == 9); // true
-console.log(a == '9'); // true
-console.log(true == 1); // true
+// console.log(a === 9); // true
+// console.log(a === '9'); // false
+// // Lose equality operator (value)
+// console.log(a == 9); // true
+// console.log(a == '9'); // true
+// console.log(true == 1); // true
+
+// Ternary operators (conditional operators)
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);
