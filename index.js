@@ -66,14 +66,14 @@ const person = {
 function greet(name) { // parameter
     console.log(`Hello ${name}!`); // body function
 }
-greet('Lena'); // argument
-greet('Bartek');
+// greet('Lena'); // argument
+// greet('Bartek');
 
 function bye(name, lastName) {
     console.log(`Good night, sweet ${name} from ${lastName} House!`)
 }
 
-bye('Lena', 'Lanister');
+// bye('Lena', 'Lanister');
 
 // Calculating a value
 
@@ -81,7 +81,19 @@ function square(number) {
     return number * number;
 }
 
-console.log(square(4)); // cosnole.log is also a function call :P
+// console.log(square(4)); // cosnole.log is also a function call :P
 
 let squareRoot = square(27);
-console.log(squareRoot);
+// console.log(squareRoot);
+
+// Arithmetic operators - counting
+
+let x = 10;
+let y = 11;
+
+console.log(x + y); // expression - something that produces a value
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y); // modulo
+console.log(x ** y); // exponentiation - x to y power
