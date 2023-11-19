@@ -91,9 +91,18 @@ let squareRoot = square(27);
 let x = 10;
 let y = 11;
 
-console.log(x + y); // expression - something that produces a value
-console.log(x - y);
-console.log(x * y);
-console.log(x / y);
-console.log(x % y); // modulo
-console.log(x ** y); // exponentiation - x to y power
+// console.log(x + y); // expression - something that produces a value
+// console.log(x - y);
+// console.log(x * y);
+// console.log(x / y);
+// console.log(x % y); // modulo
+// console.log(x ** y); // exponentiation - x to y power
+
+// Increment (++)
+// console.log(x); // 10
+// console.log(++x); // 11
+// 2nd approach
+console.log(x++); // 10
+console.log(x); // 11
+
+// Decrement
