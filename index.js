@@ -142,14 +142,29 @@ let type = points > 100 ? 'gold' : 'silver';
 
 // Logical operators with non-booleans
 
-// Logical AND (&&) - returns TRUE if both operands are TRUE
-console.log(true && true); // true
-console.log(true && false); // false
+// // Logical AND (&&) - returns TRUE if both operands are TRUE
+// console.log(true && true); // true
+// console.log(true && false); // false
 
-// Logical OR (||) - returns TRUE if one of operators is TRUE
-console.log(true || true); // true
-console.log(true || false); // true
-console.log(false || false) // false
+// // Logical OR (||) - returns TRUE if one of operators is TRUE
+// console.log(true || true); // true
+// console.log(true || false); // true
+// console.log(false || false) // false
 
-// NOT (!)
-console.log(!true); // false
+// // NOT (!)
+// console.log(!true); // false
+
+console.log(false || true); // true
+console.log(false || 'Lena'); // Lena
+console.log(false || 1 ); // 1
+
+// If operand is not a boolean true or false, it interprets result as truthy or falsy
+// Falsy values => undefined, null, 0, false, '', NaN
+// Anything not Falsy => Truthy
+
+console.log(false || 1 || 2) // 1 - as soon as truthy value is found it's returned - short-circuiting
+
+let userColor = 'red'; // if userColor = undefined; currentColor = blue
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor); // red
