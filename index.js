@@ -102,7 +102,8 @@ let y = 11;
 // console.log(x); // 10
 // console.log(++x); // 11
 // 2nd approach
-console.log(x++); // 10
-console.log(x); // 11
+// console.log(x++); // 10
+// console.log(x); // 11
 
 // Decrement
+console.log(--x); // 9
