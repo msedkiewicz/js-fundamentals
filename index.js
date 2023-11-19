@@ -118,11 +118,19 @@ x *= 3 // x = x * 3; multiplication assignment operator
 // Comparison operators
 
 // Relational operators - returns Boolean
-console.log(a > 0); // returns true
-console.log(a >= 9); // for a = 9 returns true
-console.log(a < 0); // false
-console.log(a <= 9); // true
+// console.log(a > 0); // returns true
+// console.log(a >= 9); // for a = 9 returns true
+// console.log(a < 0); // false
+// console.log(a <= 9); // true
 
-// Equality operators
+// // Equality operators
+// console.log(a === 9); // true
+// console.log(a !== 9); // false
+
+// Strict equality operator (type + value)
 console.log(a === 9); // true
-console.log(a !== 9); // false
+console.log(a === '9'); // false
+// Lose equality operator (value)
+console.log(a == 9); // true
+console.log(a == '9'); // true
+console.log(true == 1); // true
