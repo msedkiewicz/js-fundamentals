@@ -106,4 +106,11 @@ let y = 11;
 // console.log(x); // 11
 
 // Decrement
-console.log(--x); // 9
+// console.log(--x); // 9
+
+// Assignment Operators
+
+let a = 3; // simple assignment operator
+a++; // increment operator, equivalent to a = a + 1;
+a += 5; // addition assignment operator. a = a + 5;
+x *= 3 // x = x * 3; multiplication assignment operator
