@@ -138,4 +138,18 @@ x *= 3 // x = x * 3; multiplication assignment operator
 // Ternary operators (conditional operators)
 let points = 110;
 let type = points > 100 ? 'gold' : 'silver';
-console.log(type);
+// console.log(type);
+
+// Logical operators with non-booleans
+
+// Logical AND (&&) - returns TRUE if both operands are TRUE
+console.log(true && true); // true
+console.log(true && false); // false
+
+// Logical OR (||) - returns TRUE if one of operators is TRUE
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || false) // false
+
+// NOT (!)
+console.log(!true); // false
