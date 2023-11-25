@@ -1,11 +1,23 @@
 // Conditional statements
 // if...else
-// switch... case
 
 if (condition) {
-    statement;
+  statement;
 } else if (!condition) {
-    anotherStatement;
+  anotherStatement;
 } else {
+  somethingGeneric;
+}
+
+// switch... case
+
+switch (variable) {
+  case "one":
+    somethingHappens;
+    break;
+  case "two":
+    anotherSomethingHappens;
+    break;
+  default:
     somethingGeneric;
 }
