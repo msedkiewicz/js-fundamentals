@@ -21,3 +21,7 @@ switch (role) {
   default:
     console.log("User: Role unknown");
 }
+
+if (role === "guest") console.log("User: Guest");
+else if (role === "moderator") console.log("User: Moderator");
+else console.log("User: Role unknown");
