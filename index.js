@@ -1,3 +1,4 @@
+//Conditional statements
 // if... else
 let hour = 10;
 
@@ -25,3 +26,26 @@ switch (role) {
 if (role === "guest") console.log("User: Guest");
 else if (role === "moderator") console.log("User: Moderator");
 else console.log("User: Role unknown");
+
+// Loops
+for (let i = 0; i < 5; i++) {
+    console.log(`${i}. Hello World!`);
+}
+
+for (let i = 1; i <= 5; i++) {
+    console.log(`${i}. Hello From Another World!`);
+}
+
+// option for odd numbers
+for (let i = 1; i <= 5; i++) {
+    if (i % 2 !== 0) {
+        console.log(`${i}. Hello From Odd Number!`);
+    }
+}
+
+// fun with even numbers
+for (let i = 8; i >= 0; i--) {
+    if (i % 2 === 0) {
+        console.log(`${i}. Hello From Even Number!`);
+    }
+}
