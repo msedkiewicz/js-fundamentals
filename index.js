@@ -49,3 +49,12 @@ for (let i = 8; i >= 0; i--) {
         console.log(`${i}. Hello From Even Number!`);
     }
 }
+
+// While loop
+i = 0;
+while (i <= 5) {
+    if (i % 2 === 0) {
+        console.log(`${i}. Still learning JS!`);
+    }
+    i++; // VERY IMPORTANT!!!!!!!!!! AND IN THIS PLACE, not in if statement...
+}
