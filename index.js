@@ -64,3 +64,17 @@ do {
   console.log(`${a}. Fighting to learn JS!`);
   a++;
 } while (a <= 3);
+
+// Infinite loop
+// let i = 0;
+// while (i < 5) {
+//     console.log('something');
+// }
+
+// while(true) {
+//     something...
+// }
+
+// for (let i = 0; i > 0; i++) {
+//     something...
+// }

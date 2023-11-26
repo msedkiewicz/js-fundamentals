@@ -40,7 +40,7 @@ do {
   incrementing;
 } while(condition);
 
-
+// Infinite loops - name is enough descriptive...
 // For... in loops
 // For... of loops
 
