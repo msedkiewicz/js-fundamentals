@@ -95,3 +95,8 @@ const colors = ['red', 'blue', 'grey']; // for... in loop for Arrays. Not handy 
 for (let index in colors) {
     console.log(index, colors[index]);
 }
+
+// For...of loop - for arrays
+for (let color of colors) {
+    console.log(color);
+}

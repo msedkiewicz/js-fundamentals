@@ -54,5 +54,5 @@ for (let key in person) {
 }
 
 // Dot notation - person.name; bracket notation- person['name']
-// For... of loops
+// For... of loops - for arrays
 
