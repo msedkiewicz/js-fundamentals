@@ -41,6 +41,18 @@ do {
 } while(condition);
 
 // Infinite loops - name is enough descriptive...
-// For... in loops
+
+// For... in loops - for objects
+
+const person = { // object
+  name: 'Lena',
+  favNumber: 7
+}
+
+for (let key in person) {
+  somethingHappens;
+}
+
+// Dot notation - person.name; bracket notation- person['name']
 // For... of loops
 

@@ -78,3 +78,20 @@ do {
 // for (let i = 0; i > 0; i++) {
 //     something...
 // }
+
+// For...in loop
+const person = {
+  // object
+  name: "Lena",
+  favNumber: 7,
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+
+const colors = ['red', 'blue', 'grey']; // for... in loop for Arrays. Not handy but possible...
+
+for (let index in colors) {
+    console.log(index, colors[index]);
+}
