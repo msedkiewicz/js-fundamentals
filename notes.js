@@ -28,13 +28,19 @@ switch (variable) {
 for (initialExpression; condition; incrementExpression) {
   somethingHappens;
 }
-// While loops - declare variable before loop; condition - e.g. i > 5; 
+// While loops - declare variable before loop; condition - e.g. i > 5;
 let i = 0;
 while(condition) {
   statement;
   incrementing;
 }
 // Do... while loops
+do {
+  statement;
+  incrementing;
+} while(condition);
+
+
 // For... in loops
 // For... of loops
 

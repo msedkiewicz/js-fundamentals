@@ -29,32 +29,38 @@ else console.log("User: Role unknown");
 
 // Loops
 for (let i = 0; i < 5; i++) {
-    console.log(`${i}. Hello World!`);
+  console.log(`${i}. Hello World!`);
 }
 
 for (let i = 1; i <= 5; i++) {
-    console.log(`${i}. Hello From Another World!`);
+  console.log(`${i}. Hello From Another World!`);
 }
 
 // option for odd numbers
 for (let i = 1; i <= 5; i++) {
-    if (i % 2 !== 0) {
-        console.log(`${i}. Hello From Odd Number!`);
-    }
+  if (i % 2 !== 0) {
+    console.log(`${i}. Hello From Odd Number!`);
+  }
 }
 
 // fun with even numbers
 for (let i = 8; i >= 0; i--) {
-    if (i % 2 === 0) {
-        console.log(`${i}. Hello From Even Number!`);
-    }
+  if (i % 2 === 0) {
+    console.log(`${i}. Hello From Even Number!`);
+  }
 }
 
 // While loop
 i = 0;
 while (i <= 5) {
-    if (i % 2 === 0) {
-        console.log(`${i}. Still learning JS!`);
-    }
-    i++; // VERY IMPORTANT!!!!!!!!!! AND IN THIS PLACE, not in if statement...
+  if (i % 2 === 0) {
+    console.log(`${i}. Still learning JS!`);
+  }
+  i++; // VERY IMPORTANT!!!!!!!!!! AND IN THIS PLACE, not in if statement...
 }
+// Do... while loop - always executed, at least once, even if condition evaluates to false
+let a = 0;
+do {
+  console.log(`${a}. Fighting to learn JS!`);
+  a++;
+} while (a <= 3);
