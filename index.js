@@ -100,3 +100,16 @@ for (let index in colors) {
 for (let color of colors) {
     console.log(color);
 }
+
+// break and continue
+
+let b = 0;
+while (b <= 10) {
+  //if (b === 5) break; // loop goes up to 4
+  if (b % 2 === 0) {
+    b++;
+    continue; // JS jumps to the beginning of the loop and executes next iteration
+  }
+  console.log(b);
+  b++;
+}

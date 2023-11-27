@@ -56,3 +56,4 @@ for (let key in person) {
 // Dot notation - person.name; bracket notation- person['name']
 // For... of loops - for arrays
 
+// break and continiue - two commands that change the way loops work
