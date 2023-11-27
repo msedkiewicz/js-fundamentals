@@ -11,21 +11,21 @@ console.log(checkSpeed(150));
 console.log(checkSpeed(130));
 
 function checkSpeed(speed) {
-    if (typeof speed === 'number') {
-        const speedLimit = 70;
-        const kmPerPoint = 5;
-        const penaltyPoints = 12;
-        if (speed <= speedLimit) {
-            return speed;
-        } else {
-            const points = Math.floor((speed - speedLimit) / kmPerPoint);
-            if (points === 0) {
-                return speed;
-            } else if (points > 0 && points < penaltyPoints) {
-                return `Points: ${points}`;
-            } else {
-                return 'License suspended';
-            }
-        }
+  if (typeof speed === "number") {
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+    const penaltyPoints = 12;
+    if (speed <= speedLimit) {
+      return speed;
     }
+
+    const points = Math.floor((speed - speedLimit) / kmPerPoint);
+    if (points === 0) {
+      return speed;
+    } else if (points > 0 && points < penaltyPoints) {
+      return `Points: ${points}`;
+    } else {
+      return "License suspended";
+    }
+  }
 }
