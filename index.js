@@ -6,15 +6,8 @@ const arr3 = [0, 1, 2, 3, 4];
 function countTruthy(array) {
   let truthyCount = 0;
   for (let value of array) {
-    if (
-      value !== undefined &&
-      value !== null &&
-      value !== "" &&
-      value !== false &&
-      value !== 0 &&
-      value !== NaN
-    ) {
-      truthyCount += 1;
+    if (value) {
+      truthyCount++;
     }
   }
   return truthyCount;
