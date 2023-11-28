@@ -1,8 +1,25 @@
-showNumbers(10);
+// Flasy values: undefined, null, '', false, 0, NaN
 
-function showNumbers(limit) {
-  for (let i = 0; i <= limit; i++) {
-    const message = (i % 2 !== 0) ? 'ODD' : 'EVEN'
-    console.log(i, message);
+const arr1 = [true, false, 0, 12, 'Steve', null]
+const arr2 = [1, 2, 3];
+const arr3 = [0, 1, 2, 3, 4];
+function countTruthy(array) {
+  let truthyCount = 0;
+  for (let value of array) {
+    if (
+      value !== undefined &&
+      value !== null &&
+      value !== "" &&
+      value !== false &&
+      value !== 0 &&
+      value !== NaN
+    ) {
+      truthyCount += 1;
+    }
   }
+  return truthyCount;
 }
+
+console.log(countTruthy(arr1));
+console.log(countTruthy(arr2));
+console.log(countTruthy(arr3));
