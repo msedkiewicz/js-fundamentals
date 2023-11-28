@@ -1,12 +1,16 @@
-const movie = {
-  title: "Star Wars",
-  releaseYear: 1980,
-  rating: 10,
-  director: "George Lucas",
-};
-function showProperties(obj) {
-  for (let property in obj)
-    if (typeof obj[property] === "string") console.log(property, obj[property]);
-}
+// Multiples of 3: 3, 6, 9
+// Multiples of 5: 5, 10
 
-showProperties(movie);
+console.log(sum(10));
+
+function sum(limit) {
+  let multiplesSum = 0;
+
+  for (let i = 0; i <= limit; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      multiplesSum += i;
+    }
+  }
+
+  return multiplesSum;
+}
