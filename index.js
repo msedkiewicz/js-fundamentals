@@ -5,10 +5,8 @@ const movie = {
   director: "George Lucas",
 };
 function showProperties(obj) {
-  for (const property in obj) {
-    if (typeof obj[property] === "string")
-      console.log(`${property}: ${obj[property]}`);
-  }
+  for (let property in obj)
+    if (typeof obj[property] === "string") console.log(property, obj[property]);
 }
 
 showProperties(movie);
