@@ -10,14 +10,18 @@ const studentsMarks3 = [80, 80, 50];
 const studentsMarks4 = [80, 80, 95];
 const studentsMarks5 = [95, 95, 100];
 
-function calculateGrade(marks) {
-  let sumOfMarks = 0;
+function calculateAverage(array) {
+  let sum = 0;
 
-  for (const mark of marks) {
-    sumOfMarks += mark;
+  for (const value of array) {
+    sum += value;
   }
 
-  const average = sumOfMarks / marks.length;
+  return sum / array.length;
+}
+
+function calculateGrade(marks) {
+  const average = calculateAverage(marks);
 
   if (average < 60) return "F";
   if (average < 70) return "D";
