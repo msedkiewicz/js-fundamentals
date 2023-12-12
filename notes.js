@@ -67,11 +67,29 @@ delete circle4.draw;
 // console.log(circle4);
 
 const another = new Circle(1);
-console.log(another.constructor);
-console.log(circle1.constructor);
+// console.log(another.constructor);
+// console.log(circle1.constructor);
 
 // let x = {};
 // let x = new Object();
 // new String(); or '' or "" or ``
 // new Boolean(); => true / false
 // new Number(); => 1, 2, 3, ...
+
+// functions are objects
+const Square = new Function(
+  "length",
+  `
+this.length = length;
+this.draw = function() {
+  console.log("draw");
+}
+`
+);
+
+// Circle.call({}, 1)
+// Circle.call(window, 1)
+// Circle.apply({}, [1, 2, 3])
+
+const square = new Square(2);
+console.log(square);
