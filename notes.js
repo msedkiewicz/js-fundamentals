@@ -37,7 +37,7 @@ function createCircle(radius) {
   };
 }
 
-// const circle1 = createCircle(1);
+const circle1 = createCircle(1);
 // console.log(circle1);
 // circle1.draw();
 // const circle2 = createCircle(2);
@@ -61,7 +61,17 @@ const circle4 = {
 
 circle4.color = "blue";
 circle4.draw = function () {};
-console.log(circle4);
+// console.log(circle4);
 
 delete circle4.draw;
-console.log(circle4);
+// console.log(circle4);
+
+const another = new Circle(1);
+console.log(another.constructor);
+console.log(circle1.constructor);
+
+// let x = {};
+// let x = new Object();
+// new String(); or '' or "" or ``
+// new Boolean(); => true / false
+// new Number(); => 1, 2, 3, ...
