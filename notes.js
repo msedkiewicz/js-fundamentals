@@ -54,3 +54,14 @@ function Circle(radius) {
 }
 
 const circle3 = new Circle(1);
+
+const circle4 = {
+  radius: 1,
+};
+
+circle4.color = "blue";
+circle4.draw = function () {};
+console.log(circle4);
+
+delete circle4.draw;
+console.log(circle4);
