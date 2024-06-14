@@ -93,3 +93,27 @@ this.draw = function() {
 
 const square = new Square(2);
 console.log(square);
+
+const circleone = {
+  radius: 1,
+  draw() {
+    console.log("draw");
+  },
+};
+for (let key in circleone) {
+  console.log(key, circleone[key]);
+}
+
+for (let key of circleone) {
+  console.log(key);
+} // TypeError: circleone is not iterable
+
+for (let key of Object.keys(circleone)) {
+  console.log(key);
+}
+
+for (let entry of Object.entries(circleone)) {
+  console.log(entry);
+}
+
+if ("radius" in circleone) console.log("yes");
