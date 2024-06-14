@@ -58,3 +58,15 @@ const name = "John";
 const mailing = `Hi ${name}!
 
 It's nice to have you here! Give a high ${2 + 3}!`;
+
+//Date
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+const now = new Date();
+const date1 = new Date("May 11 2018 9:00");
+const date2 = new Date(2018, 0, 24, 9, 4);
+
+now.setFullYear(2017);
+now.toDateString();
+now.toTimeString();
+now.toISOString();
