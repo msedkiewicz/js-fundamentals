@@ -21,3 +21,23 @@ console.log(numberstwo.lastIndexOf(1));
 console.log(numberstwo.indexOf(1) !== -1);
 console.log(numberstwo.includes(1));
 console.log(numberstwo.indexOf(1, 2)); // second parameter - from which index we start
+
+const courses = [
+  { id: 1, name: "Math" },
+  { id: 2, name: "Literature" },
+  { id: 3, name: "PE" },
+  { id: 4, name: "Chemistry" },
+];
+
+console.log(courses.includes({ id: 1, name: "Math" })); // false
+const course = courses.find(function (course) {
+  return course.name === "PE";
+});
+
+console.log(course);
+
+const courseIndex = courses.findIndex(function (courseIndex) {
+  return courseIndex.name === "PE";
+});
+
+console.log(courseIndex);
