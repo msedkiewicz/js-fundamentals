@@ -27,3 +27,13 @@ let somenumbers = [1, 3, 5, 7, 9, 0];
 
 while (somenumbers.length > 0) somenumbers.pop();
 console.log(somenumbers);
+
+// objects
+
+const object = [{ id: 1 }, { id: 2 }];
+const combinedid = object.concat(somenumbers);
+console.log(combinedid);
+
+object[0].id = 12;
+console.log(combinedid);
+console.log(object);
