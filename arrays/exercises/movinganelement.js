@@ -2,7 +2,7 @@ const numbers = [1, 2, 3, 4];
 
 function move(array, index, offset) {
   const position = index + offset;
-  if (position >= array.length) {
+  if (position >= array.length || position < 0) {
     console.error("Invalid offset.");
     return;
   }
@@ -15,7 +15,7 @@ function move(array, index, offset) {
 
 const output = move(numbers, 0, 2);
 console.log(output);
-const outputMinus = move(numbers, 1, -2);
+const outputMinus = move(numbers, 1, -1);
 console.log(outputMinus);
 const outputWrong = move(numbers, 0, 8);
 console.log(outputWrong);
