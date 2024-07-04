@@ -18,7 +18,6 @@ function getMax(array) {
   // }
   // return max;
   return array.reduce((accumulator, current) => {
-    if (current > accumulator) return current;
-    return accumulator;
+    return current > accumulator ? current : accumulator;
   });
 }
