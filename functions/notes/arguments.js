@@ -20,3 +20,21 @@ console.log(sumOfAll(1, 3)); // 4
 console.log(sumOfAll(1)); // 1
 console.log(sumOfAll()); // 0
 console.log(sumOfAll(1, 3, 5, 7)); // 16
+
+// Rest operator - pass varying arguments number
+function sumRest(...args) {
+  return args.reduce((a, b) => a + b);
+}
+
+console.log(sumRest(1, 3)); // 4
+console.log(sumRest(1)); // 1
+console.log(sumRest()); // error - no initial value
+console.log(sumRest(1, 3, 5, 7)); // 16
+
+function sumCart(discount, ...prices) {
+  const total = prices.reduce((a, b) => a + b);
+  return total * (1 - discount);
+}
+console.log(sumCart(0.1, 20, 35, 48));
+
+// Rest operator MUST BE the last parameter added:discount, ...prices, someValue - won't work!
