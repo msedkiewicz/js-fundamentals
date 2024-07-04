@@ -10,6 +10,7 @@ console.log(interest(10000));
 // ES 6
 function interestTwo(principal, rate = 3.5, years = 5) {
   // give default value for all the parameters that go after first one with value
+  //function interestTwo(principal, rate = 3.5, years) => console.log(interestTwo(10000, undefined, 5)); - workaround
   return ((principal * rate) / 100) * years;
 }
 
