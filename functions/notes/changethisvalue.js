@@ -2,11 +2,9 @@ const bestMovies = {
   title: "Star Wars",
   actors: ["Carrie Fisher", "Mark Hamill", "Harison Ford"],
   showActors() {
-    this.actors.forEach(
-      function (actor) {
-        console.log(this.title, actor);
-      }.bind(this)
-    );
+    this.actors.forEach((actor) => {
+      console.log(this.title, actor);
+    });
   },
 };
 
