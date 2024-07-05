@@ -2,10 +2,11 @@ const bestMovies = {
   title: "Star Wars",
   actors: ["Carrie Fisher", "Mark Hamill", "Harison Ford"],
   showActors() {
-    const that = this;
-    this.actors.forEach(function (actor) {
-      console.log(that.title, actor);
-    });
+    this.actors.forEach(
+      function (actor) {
+        console.log(this.title, actor);
+      }.bind(this)
+    );
   },
 };
 
@@ -18,5 +19,4 @@ function playVideo(a, b) {
 playVideo.call({ name: "Video One" }, 1, 2); // object
 playVideo(); // window
 playVideo.apply({ name: "Video One" }, [1, 2]); // object
-const fn = playVideo.bind({ name: "Video Two" });
-fn();
+playVideo.bind({ name: "Video Two" })();
