@@ -4,7 +4,7 @@ const bestMovies = {
   showActors() {
     this.actors.forEach((actor) => {
       console.log(this.title, actor);
-    });
+    }); // arrow function inherits this
   },
 };
 
